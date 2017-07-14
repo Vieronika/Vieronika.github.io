@@ -4,43 +4,103 @@
     <meta charset="UTF-8">
     <title>Gllacy_IceCream</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="../../gllacy/depositphotos_19252699-stock-illustration-tasty-ice-cream-such-logo.psd">
+    <!--<link rel="icon" href="#">-->
  </head>
 <body>
+    <input type="radio" name="switcher" id="color-1" checked>
+    <input type="radio" name="switcher" id="color-2">
+    <input type="radio" name="switcher" id="color-3">
     <header>
-        <div class="logo"></div>
-        <ul class="main_info">
-            <li>Каталог</li>
-            <li>Доставка и оплата</li>
-            <li>О Компании</li>
+        <a href="#" class="logo"></a>
+
+        <ul class="main-nav">
+            <li><a href="index-2.html">Каталог</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О Компании</a></li>
         </ul>
-        <div class="user_field">
-            <input type="button" name="search">
-            <input type="button" name="login">
-            <input type="button" name="basket">
+
+        <div class="user-area">
+            <div class="user-actions">
+                <a href="#" id="search"></a>
+                <a href="#" id="login">Вход</a>
+                <a href="#" id="cart">Корзина</a>
+            </div>
+            <div class="contacts">
+                <p class="schedule">С 10 до 20, ежедневно</p>
+                <p class="phone">8 812 450-25-25</p>
+            </div>
         </div>
-        <div class="schedule">С 10 до 20, ежедневно</div>
-        <div class="phone">8 812 450-25-25</div>
+
     </header>
     <main>
-        <div class="bigtext">
-            <h1>Крем-брюле и пломбир с малиновым джемом</h1>
+        <div class="gallery">
+            <div class="gallery-content gallery-content-1">
+                <h1>Крем-брюле и пломбир с малиновым джемом</h1> 
+                <button>Давайте оба!</button>
+            </div>
+            <div class="gallery-content gallery-content-2">
+                <h1>Крем-брюле и пломбир с малиновым джемом-2</h1> 
+                <button>Давайте оба!</button>
+            </div>
+            <div class="gallery-content gallery-content-3">
+                <h1>Крем-брюле и пломбир с малиновым джемом-3</h1> 
+                <button>Давайте оба!</button>
+            </div>
+            <div class="switch-buttons">
+                <label for="color-1">1</label>
+                <label for="color-2">2</label>
+                <label for="color-3">3</label>
+            </div>
         </div>
-        <input type="button" name="choose2">
-        <!--Slider Button></!-->
-        <div class="raspberry">
-            <h2>Малинка даром!</h2>
-            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья <strong>бесплатно</strong></p>
-            <input type="button" name="wantjam">
+        
+        <div class="adverts">
+            <div class="raspberry">
+                <h2>Малинка даром!</h2>
+                <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья <span class="bold">бесплатно</span></p>
+                <button>Хочу варенье!</button>
+            </div>
+            <div class="chocolate">
+                <h2>Шоколадки даром!</h2>
+                <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки <span class="bold">совершенно бесплатно</span></p>
+                <button>Хочу шоколадки!</button>
+            </div>
         </div>
-        <div class="chocolate">
-            <h2>Шоколадки даром!</h2>
-            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки <strong>совершенно бесплатно</strong></p>
-            <input type="button" name="wantchoco">
+        <div class="ice-creams">   
+            <article class="ice-cream1">
+                <p class="ic-1">310 Р/кг</p>
+                <p class="ic-1.1">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                <button class="quick-view">Быстрый просмотр</button>
+            </article>
+            <article class="ice-cream2">
+                <p class="ic-2">380 Р/кг</p>
+                <p class="ic-2.1">Сливочно-кофейное с кусочками шоколада</p>
+                <button class="quick-view">Быстрый просмотр</button>
+            </article>
+            <article class="ice-cream3">
+                <p class="ic-3">355 Р/кг</p>
+                <p class="ic-3.1">Сливочно-клубничное с присыпкой из белого шоколада</p>
+                <button class="quick-view">Быстрый просмотр</button>
+            </article>
+            <article class="ice-cream4">
+                <p class="ic-4">415 Р/кг</p>
+                <p class="ic-4.1">Сливочное крем-брюле с карамельной подливкой</p>
+                <button class="quick-view">Быстрый просмотр</button>
+            </article>
         </div>
-        <!--><section class="hits"></section></!-->
-        <div>
-            <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого <em>собственного</em> производства на развес</h3>
+        <div class="advantages">
+            <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
+            <div class="img icecream">
+                <!-->img</!-->
+            </div>
+            <div class="img leave">
+                <!-->img</!-->
+            </div>
+            <div class="img cow">
+                <!-->img</!-->
+            </div>
+            <div class="img temp">
+                <!-->img</!-->
+            </div>
             <div>
                 <p>Все наше мороженое изготавляется на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
                 <p>Для изготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
@@ -50,16 +110,18 @@
                 <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
             </div>
         </div>
-        <div>
-            <p>Новое в нашем блоге</p>
-            <a href="">10 способов сервировки фруктовых щербетов к столу</a>
-        </div>
-        <div>
-            <p>Подпишитесь на нашу сладкую рассылку и будуете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.</p>
-            <form action="index.html" method="post">
-                <input type="text" name="email">
-                <input type="submit" value="Отправить">
-            </form>
+        <div class="additional">
+            <div class="news">
+                <p>Новое в нашем блоге</p>
+                <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            </div>
+            <div class="sign-up">
+                <p>Подпишитесь на нашу сладкую рассылку и будуете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.</p>
+                <form action="index.html" method="post">
+                    <input type="text" name="email">
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
         </div>
         <div class="map">
             <div class="address">
@@ -71,21 +133,21 @@
                    8 812 450-25-25<br>
                    (с 10 до 20 ежедневно)                
                 </p>
-                <input type="button" name="connection">
+                <button>Форма обратной связи</button>
             </div>
         </div>
     </main>
     <footer>
-        <div>
-            <input type="button" name="twitter">
-            <input type="button" name="instagram">
-            <input type="button" name="facebook">
-            <input type="button" name="vk">
-            <div class="info">
-                <a href="index.html">Для поставщиков</a>
-                <a href="">О производстве</a>
-                <a href="">Наши документы</a>
-                <a href="">Экологические стандарты</a>
+        <div class="footer">
+            <button class="media">Twit</button>
+            <button class="media">Instagram</button>
+            <button class="media">Facebook</button>
+            <button class="media">VK</button>
+            <div class="info-about">
+                <a href="#">Для поставщиков</a>
+                <a href="#">О производстве</a>
+                <a href="#">Наши документы</a>
+                <a href="#">Экологические стандарты</a>
             </div>
             <div class="source">
                 <p>Сделано в HTML Academy  2017</p>
