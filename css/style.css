@@ -1,1 +1,104 @@
-
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(132, 157, 143);
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.wrapper {
+    padding: 0 27px;
+    width: 1146px;
+    margin: 0 auto;
+}
+header {
+    /*min-height: 74px;*/
+    height: 200px;
+    background-color: blue;
+}
+.logo-container {
+    float: left;
+    width: 154px;
+    height: 74px;
+    background-color: pink;
+}
+.main-nav {
+    float: left;
+    width: 387px;
+    background-color: yellow;
+}
+.main-nav-list {
+    font-size: 0;
+}
+.main-nav-list-options {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0 5px;
+}
+.catalog {
+    display: none;
+    list-style: none;
+}
+.main-nav-list-options:hover > .catalog {
+    display: block;
+    margin-left: -40px;
+}
+.user-area {
+    float: right;
+    width: 265px;
+    background-color: lightpink;
+}
+.user-actions {
+    width: 267px;
+    height: 40px;
+}
+.search-form {
+    display: none;
+}
+.search-field:hover .search-form {
+    display: block;
+}
+.search-field {
+    float: left;
+    width: 36px;
+    min-height: 36px;
+    background-color: violet;
+}
+.login-block {
+    float: left;
+    width: 96px;
+    min-height: 36px;
+    background-color: grey;
+}
+.login-form {
+    display: none;
+}
+.login-block:hover .login-form {
+    display: block;
+}
+.cart-block {
+    float: right;
+    width: 118px;
+    min-height: 36px;
+    background-color: lightslategrey;
+}
+.full-cart {
+    display: none;
+    background-color: white;  
+}
+*/ */ 
+.cart-block:hover .full-cart {
+    display: table;
+    width: 540px;
+}
+main {
+    background-color: orange;
+}
+footer {
+    height: 103px;
+    background-color: blue;
+}

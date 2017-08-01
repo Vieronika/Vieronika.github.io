@@ -3,162 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <title>Catalog_Gllacy</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="../gllacy/title.jpg">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo"></a>
-
-        <ul class="main-nav">
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О Компании</a></li>
-        </ul>
-
-        <div class="user-area">
-            <div class="user-actions">
-                <a href="#" id="search"></a>
-                <a href="#" id="login">Вход</a>
-                <a href="#" id="cart">Корзина</a>
+    <div class="wrapper">
+        <header class="clearfix">
+            <div class="logo-container"> 
+                <a href="index.html" class="logo"><!--background-image: sprite--></a>
             </div>
-            <div class="contacts">
-                <p class="schedule">С 10 до 20, ежедневно</p>
-                <p class="phone">8 812 450-25-25</p>
+            <ul class="main-nav">
+                <li>Каталог</li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">О Компании</a></li>
+            </ul>
+            <div class="user-area">
+                <div class="user-actions">
+                    <a href="#" id="search"></a>
+                    <a href="#" id="login">Вход</a>
+                    <a href="#" id="cart"><span id="cart-counter">2</span> Товаров</a>
+                </div>
+                <div class="full-cart">
+                    <div class="full-cart-table">
+                        <div class="full-cart-row-1">
+                            <div class="full-cart-cell-1">
+                                <!--background-image: url(../../gllacy/x-cart.svg);-->
+                            </div>
+                            <div class="full-cart-cell-2">
+                                <!--background-image: url(../../gllacy/full-cart-ice-cream-1.svg);-->
+                            </div>
+                            <div class="full-cart-cell-3">
+                                Пломбир с апельсиновым джемом
+                            </div>
+                            <div class="full-cart-cell-4">
+                                1,5 кг х <span class="grey">200 руб.</span>
+                            </div>
+                            <div class="full-cart-cell-5">
+                                300 руб.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full-cart-row-2">
+                        <div class="full-cart-cell-1">
+                                <!--background-image: url(../../gllacy/x-cart.svg);-->
+                        </div>
+                        <div class="full-cart-cell-2">
+                            <!--background-image: url(../../gllacy/full-cart-ice-cream-2.svg);-->
+                        </div>
+                        <div class="full-cart-cell-3">
+                            Клубничный пломбир с присыпкой из белого шоколада
+                        </div>
+                        <div class="full-cart-cell-4">
+                            1,5 кг х <span class="grey">300 руб.</span>
+                        </div>
+                        <div class="full-cart-cell-5">
+                            450 руб.
+                        </div>
+                    </div>
+                    <div class="full-cart-sum">
+                        Итого: 750 руб.
+                    </div>
+                    <button class="button">Оформить заказ</button>
+                </div>
+                <div class="contacts">
+                    <p class="schedule">С 10 до 20, ежедневно</p>
+                    <p class="phone">8 812 450-25-25</p>
+                </div>         
             </div>
-            
-        </div>
-
-    </header>
-
-    <main>
-        <ul class="bread-crumps">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">Сливочное</a></li>
-        </ul>
-        <div class="topic">
-            <h1>Сливочное мороженое</h1>
-        </div>
-        <div class="filters">
-            <div class="filter-1">
-                <p>Сортировка:</p>
-                <select name="sorting" id="sorting">
-                    <option value="popular">по популярности</option>
-                </select>
-            </div>
-            <div class="filter-2">
-                <p>Цена: 100 руб. - 500 руб.</p>
-                <div class="range-wraper">
-                <input type="range" min="10" max="800" step="any" id="range">
+        </header>
+        <main>
+            <ul class="bread-crumps">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="index-2.html">Каталог</a></li>
+                <li>Сливочное</li>
+            </ul>   
+            <h1>Сливочное мороженое</h1>     
+            <div class="filters-container">
+                <div class="filter-1">
+                    <p>Сортировка:</p>
+                    <select name="sorting" id="sorting">
+                        <option value="popular">по популярности</option>
+                    </select>
+                </div>
+                <div class="filter-2">
+                    <p>Цена: 100 руб. - 500 руб.</p>
+                    <div class="range-wraper">
+                        <input type="range" min="10" max="800" step="any" id="range">
+                    </div>
+                </div>
+                <div class="filter-3">
+                    <p>Жирность:</p>
+                    <input type="radio" name="fat" id="0-percent" checked>
+                    <label for="0-percent">0%</label>
+                    <input type="radio" name="fat" id="10-percent">
+                    <label for="10-percent">до 10%</label>
+                    <input type="radio" name="fat" id="30-percent">
+                    <label for="10-percent">до 30%</label>
+                    <input type="radio" name="fat" id="more-30">
+                    <label for="10-percent">выше 30%</label>
+                </div>
+                <div class="filter-4">
+                    <p>Наполнители:</p>
+                    <div class="fillers">
+                        <input type="checkbox" name="choco" id="chocolate" checked>
+                        <label for="chocolate">шоколадные</label>
+                        <input type="checkbox" name="sugar" id="sugary" checked>
+                        <label for="sugary">сахарные присыпки</label>
+                        <input type="checkbox" name="fruits" id="fruity">
+                        <label for="fruity">фрукты</label>
+                        <input type="checkbox" name="syrups" id="syrup">
+                        <label for="syrup">сиропы</label>
+                        <input type="checkbox" name="jams" id="jam">
+                        <label for="jam">джем</label>
+                    </div>
+                    <button class="supply">Применить</button>
                 </div>
             </div>
-            <div class="filter-3">
-                <p>Жирность:</p>
-                <input type="radio" name="fat" id="0-percent" checked>
-                <label for="0-percent">0%</label>
-                <input type="radio" name="fat" id="10-percent">
-                <label for="10-percent">до 10%</label>
-                <input type="radio" name="fat" id="30-percent">
-                <label for="10-percent">до 30%</label>
-                <input type="radio" name="fat" id="more-30">
-                <label for="10-percent">выше 30%</label>
-            </div>
-            <div class="filter-4">
-                <p>Наполнители:</p>
-                <div class="fillers">
-                    <input type="checkbox" name="choco" id="chocolate" checked>
-                    <label for="chocolate">шоколадные</label>
-                    <input type="checkbox" name="sugar" id="sugary" checked>
-                    <label for="sugary">сахарные присыпки</label>
-                    <input type="checkbox" name="fruits" id="fruity">
-                    <label for="fruity">фрукты</label>
-                    <input type="checkbox" name="syrups" id="syrup">
-                    <label for="syrup">сиропы</label>
-                    <input type="checkbox" name="jams" id="jam">
-                    <label for="jam">джем</label>
-                </div>
-                <button class="supply">Применить</button>
-            </div>
-        </div>
-        <div class="menu">
-            <article class="ice-cream1">
-                <p class="ic-1">310 Р/кг</p>
-                <p class="ic-1.1">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-                <button class="quick-view">Быстрый просмотр</button>
-            </article>
-            <article class="ice-cream2">
-                <p class="ic-2">380 Р/кг</p>
-                <p class="ic-2.1">Сливочно-кофейное с кусочками шоколада</p>
-                <button class="quick-view">Быстрый просмотр</button>
-            </article>
-            <article class="ice-cream3">
-                <p class="ic-3">355 Р/кг</p>
-                <p class="ic-3.1">Сливочно-клубничное с присыпкой из белого шоколада</p>
-                <button class="quick-view">Быстрый просмотр</button>
-            </article>
-            <article class="ice-cream4">
-                <p class="ic-4">415 Р/кг</p>
-                <p class="ic-4.1">Сливочное крем-брюле с карамельной подливкой</p>
-                <button class="quick-view">Быстрый просмотр</button>
-            </article>
-            <article class="ice-cream5">
-                <p class="ic-5">325 Р/кг</p>
-                <p class="ic-5.1">Сливочное с брусничным джемом</p>
-                <button class="quick-view">Быстрый просмотр</button>
-            </article>
-            <article class="ice-cream6">
-                <p class="ic-6">410 Р/кг</p>
-                <p class="ic-6.1">Сливочно-черничное с цельными ягодами черники</p>
-                <button class="quick-view">Быстрый просмотр</button>
-            </article>
-            <article class="ice-cream7">
-                <p class="ic-7">375 Р/кг</p>
-                <p class="ic-7.1">Сливочно-лимонное с карамельной присыпкой</p>
-                <button class="quick-view">Быстрый просмотр</button>
-            </article>
-            <article class="ice-cream8">
-                <p class="ic-8">320 Р/кг</p>
-                <p class="ic-8.1">Сливочное с шоколадной стружкой</p>
-                <button class="quick-view">Быстрый просмотр</button>
-            </article>
-            <article class="ice-cream9">
-                <p class="ic-9">440 Р/кг</p>
-                <p class="ic-9.1">Сливочно-ванильное с кусочками шоколада</p>
-                <button class="quick-view">Быстрый просмотр</button>
-            </article>
-            <article class="ice-cream10">
-                <p class="ic-10">435 Р/кг</p>
-                <p class="ic-10.1">Сливочное с ментоловым сиропом</p>
-                <button class="quick-view">Быстрый просмотр</button>
-            </article>
-            <article class="ice-cream11">
-                <p class="ic-11">355 Р/кг</p>
-                <p class="ic-11.1">Сливочное с кусочками черного шоколада</p>
-                <button class="quick-view">Быстрый просмотр</button>
-            </article>
-            <article class="ice-cream12">
-                <p class="ic-12">420 Р/кг</p>
-                <p class="ic-12.1">Сливочное с мятным сиропом</p>
-                <button class="quick-view">Быстрый просмотр</button>
-            </article>
-        </div>
+            <div class="products-block">
+                <article class="ice-creams ice-cream-1">
+                    <div class="ice-cream-1-view">
+                        <!--background-image: url(../gllacy/hit.jpg)-->
+                        <img src="../gllacy/ice-cream-1.jpg">
+                        <p class="ice-cream-price">310 Р/кг</p>
+                    </div>
+                    <p class="ice-cream-descript">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                    <button class="quick-view">Быстрый просмотр</button>
+                </article>
 
-    </main>
-    <footer>
-        <div class="footer">
-            <button class="media">Twit</button>
-            <button class="media">Instagram</button>
-            <button class="media">Facebook</button>
-            <button class="media">VK</button>
-            <div class="info-about">
-                <a href="#">Для поставщиков</a>
-                <a href="#">О производстве</a>
-                <a href="#">Наши документы</a>
-                <a href="#">Экологические стандарты</a>
+                <article class="ice-creams ice-cream-2">
+                <div class="ice-cream-2-view">
+                    <!--background-image: url(../gllacy/hit.jpg)-->
+                    <img src="../gllacy/ice-cream-2.jpg">
+                    <p class="ice-cream-price">380 Р/кг</p>
+                </div>
+                <p class="ice-cream-descript">Сливочно-кофейное с кусочками шоколада</p>
+                <button class="quick-view">Быстрый просмотр</button>
+                </article>
+
+                <article class="ice-creams ice-cream-3">
+                    <div class="ice-cream-3-view">
+                    <!--background-image: url(../gllacy/hit.jpg)-->
+                    <img src="../gllacy/ice-cream-3.jpg">
+                    <p class="ice-cream-price">355 Р/кг</p>
+                    </div>
+                    <p class="ice-cream-descript">Сливочно-клубничное с присыпкой из белого шоколада</p>
+                    <button class="quick-view">Быстрый просмотр</button>
+                </article>
+
+                <article class="ice-creams ice-cream-4">
+                    <div class="ice-cream-4-view">
+                        <!--background-image: url(../gllacy/hit.jpg)-->
+                        <img src="../gllacy/ice-cream-4.jpg">
+                        <p class="ice-cream-price">415 Р/кг</p>
+                    </div>
+                    <p class="ice-cream-descript">Сливочное крем-брюле с карамельной подливкой</p>
+                    <button class="quick-view">Быстрый просмотр</button>
+                </article>
+                <article class="ice-reams ice-cream-5">
+                    <div class="ice-creams-5-view">
+                        <!--background-image: url(../gllacy/hit.jpg)-->
+                        <img src="../gllacy/ice-cream-5.jpg">
+                        <p class="ice-cream-price">310 Р/кг</p>
+                    </div>
+                    <p class="ice-cream-descript">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                    <button class="quick-view">Быстрый просмотр</button>
+                </article>
+
+                <article class="ice-creams ice-cream-6">
+                    <div class="ice-cream-6-view">
+                        <!--background-image: url(../gllacy/hit.jpg)-->
+                        <img src="../gllacy/ice-cream-6.jpg">
+                        <p class="ice-cream-price">380 Р/кг</p>
+                    </div>
+                    <p class="ice-cream-descript">Сливочно-кофейное с кусочками шоколада</p>
+                    <button class="quick-view">Быстрый просмотр</button>
+                </article>
+
+                <article class="ice-creams ice-cream-7">
+                    <div class="ice-cream-7-view">
+                    <!--background-image: url(../gllacy/hit.jpg)-->
+                    <img src="../gllacy/ice-cream-7.jpg">
+                    <p class="ice-cream-price">355 Р/кг</p>
+                    </div>
+                    <p class="ice-cream-descript">Сливочно-клубничное с присыпкой из белого шоколада</p>
+                    <button class="quick-view">Быстрый просмотр</button>
+                </article>
+
+                <article class="ice-creams ice-cream-8">
+                    <div class="ice-cream-8-view">
+                        <!--background-image: url(../gllacy/hit.jpg)-->
+                        <img src="../gllacy/ice-cream-8.jpg">
+                        <p class="ice-cream-price">415 Р/кг</p>
+                    </div>
+                    <p class="ice-cream-descript">Сливочное крем-брюле с карамельной подливкой</p>
+                    <button class="quick-view">Быстрый просмотр</button>
+                </article>
+                <article class="ice-creams ice-cream-9">
+                    <div class="ice-cream-9-view">
+                        <!--background-image: url(../gllacy/hit.jpg)-->
+                        <img src="../gllacy/ice-cream-9.jpg">
+                        <p class="ice-cream-price">310 Р/кг</p>
+                    </div>
+                    <p class="ice-cream-descript">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                    <button class="quick-view">Быстрый просмотр</button>
+                </article>
+
+                <article class="ice-creams ice-cream-10">
+                <div class="ice-cream-10-view">
+                    <!--background-image: url(../gllacy/hit.jpg)-->
+                    <img src="../gllacy/ice-cream-10.jpg">
+                    <p class="ice-cream-price">380 Р/кг</p>
+                </div>
+                <p class="ice-cream-descript">Сливочно-кофейное с кусочками шоколада</p>
+                <button class="quick-view">Быстрый просмотр</button>
+                </article>
+
+                <article class="ice-cream-11">
+                    <div class="ic-11-container">
+                    <!--background-image: url(../gllacy/hit.jpg)-->
+                    <img src="../gllacy/ice-cream-11.jpg">
+                    <p class="ic-1">355 Р/кг</p>
+                    </div>
+                    <p class="ice-cream-descript">Сливочно-клубничное с присыпкой из белого шоколада</p>
+                    <button class="quick-view">Быстрый просмотр</button>
+                </article>
+
+                <article class="ice-creams ice-cream-12">
+                    <div class="ice-cream-12-view">
+                        <!--background-image: url(../gllacy/hit.jpg)-->
+                        <img src="../gllacy/ice-cream-12.jpg">
+                        <p class="ice-cream-price">415 Р/кг</p>
+                    </div>
+                    <p class="ice-cream-descript">Сливочное крем-брюле с карамельной подливкой</p>
+                    <button class="quick-view">Быстрый просмотр</button>
+                </article>
             </div>
-            <div class="source">
-                <p>Сделано в HTML Academy  2017</p>
+
+        </main>
+        <footer>
+            <div class="footer-container">
+                <ul class="social-media">
+                    <li><a href="#">Twit</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">VK</a></li>
+                </ul>
+                <ul class="info-about">
+                <li>
+                    <div class="icon-heart">
+                        <!--background-image: url(../gllacy/heart.jpg)-->
+                    </div>
+                    <a href="#">Для поставщиков</a>
+                </li>
+                <li><a href="#">О производстве</a></li>
+                <li><a href="#">Наши документы</a></li>
+                <li><a href="#">Экологические стандарты</a></li>
+                </ul>
+                <div class="source">
+                    <div class="logo-pic">
+                        <!--background-image: url(../gllacy/logo-html.jpg)-->
+                    </div>
+                    <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy  2017</a>
+                    </p>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
