@@ -3,9 +3,12 @@ body {
     padding: 0;
     background-color: rgb(132, 157, 143);
 }
+.hidden {
+    display: none;
+}
 .clearfix::after {
     content: "";
-    display: block;
+    display: table;
     clear: both;
 }
 .wrapper {
@@ -90,13 +93,21 @@ header {
     display: none;
     background-color: white;  
 }
-*/ */ 
 .cart-block:hover .full-cart {
     display: table;
     width: 540px;
 }
 main {
     background-color: orange;
+}
+.contacts {
+    margin-left: auto;
+    width: 170px;
+    background-color: indigo;
+    border-top: 1px solid transparent;
+}
+.slider-content {
+    display: none;
 }
 footer {
     height: 103px;
